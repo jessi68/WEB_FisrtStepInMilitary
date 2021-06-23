@@ -1,9 +1,8 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
-import MainTemplate from './components/MainTemplate';
-import MainHead from './components/MainHead';
-import InputName from './components/InputName';
-import InputDate from './components/InputDate';
+import { Route} from 'react-router-dom';
+import First from './components/First';
+import Second from './components/Second';
 import './App.css';
 
 const GlobalStyle=createGlobalStyle`
@@ -24,11 +23,10 @@ function App(){
 return (
     <>
     <GlobalStyle />
-    <MainTemplate>
-    <MainHead />
-    <InputName />
-    <InputDate />
-    </MainTemplate>
+    <div>
+      <Route path="/" exact={true} component={First} />
+      <Route path="/Second" component={Second} />
+    </div>
     <p>Copyright (c) 2021 김창현, 이서윤</p>
     </>
   );

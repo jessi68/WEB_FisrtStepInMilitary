@@ -37,13 +37,15 @@ function InputName() {
             <div>
                 <b>이름을 입력해주세요 : </b>
             </div>
-            <input onChange={onChange} value={text} />
+            <input placeholder="이름을 입력해주세요" onChange={onChange} value={text} />
             <button onClick={onReset}>초기화</button>
+            
+            {/*
             <div>
                 <b>값 : </b>
                 {text}
             </div>
-
+            */}
         </InputNameBlock>
     )
 }
