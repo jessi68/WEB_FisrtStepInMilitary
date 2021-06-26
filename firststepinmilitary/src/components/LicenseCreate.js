@@ -57,9 +57,9 @@ const InsertFormPositioner = styled.div`
 const InsertForm = styled.form`
   background: #f8f9fa;
   padding-left: 32px;
-  padding-top: 32px;
+  padding-top: 25px;
   padding-right: 32px;
-  padding-bottom: 72px;
+  padding-bottom: 65px;
 
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -103,9 +103,11 @@ function LicenseCreate() {
     <>
       {open && (
         <InsertFormPositioner>
-          <InsertForm onSubmit={onSubmit}>
-            <Input autoFocus placeholder="Enter 를 누르세요"  onChange={onChange}
+          <InsertForm onSubmit={onSubmit}>    
+
+         <Input autoFocus placeholder="Enter 를 누르세요"  onChange={onChange}
             value={value}/>
+
           </InsertForm>
         </InsertFormPositioner>
       )}

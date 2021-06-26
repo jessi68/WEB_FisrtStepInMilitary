@@ -1,41 +1,37 @@
 @font-face{
   font-family: "NanumSquareRoundB";
-  src:url("../src/components/fonts/NanumSquareRoundB.ttf") format("truetype");
+  src:url("../src/components/fonts/NanumSquareRoundB.ttf") format("truetype"),
+      url("../src/components/fonts/NanumSquareRoundB_1.woff") format("woff");
 }
 
 @font-face{
   font-family: "NanumSquareRoundEB";
-  src:url("../src/components/fonts/NanumSquareRoundEB.ttf") format("truetype");
+  src:url("../src/components/fonts/NanumSquareRoundEB.ttf") format("truetype"),
+      url("../src/components/fonts/NanumSquareRoundEB_1.woff") format("woff");
 }
 
 @font-face{
   font-family: "NanumSquareRoundL";
-  src:url("../src/components/fonts/NanumSquareRoundL.ttf") format("truetype");
+  src:url("../src/components/fonts/NanumSquareRoundL.ttf") format("truetype"),
+      url("../src/components/fonts/NanumSquareRoundL_1.woff") format("woff");
 }
 
 @font-face{
   font-family: "NanumSquareRoundR";
-  src:url("../src/components/fonts/NanumSquareRoundR.ttf") format("truetype");
+  src:url("../src/components/fonts/NanumSquareRoundR.ttf") format("truetype"),
+      url("../src/components/fonts/NanumSquareRoundR_1.woff") format("woff");
 }
 
 @font-face{
   font-family: "strongmil_bold";
-  src:url("../src/components/fonts/strongmil_bold.ttf") format("truetype");
+  src:url("../src/components/fonts/strongmil_bold.ttf") format("truetype"),
+      url("../src/components/fonts/strongmil_bold.woff") format("woff");
+  
 }
-
-
-@font-face{
-  font-family: "strongmil_bold_vert";
-  src:url("../src/components/fonts/strongmil_bold_vert.ttf") format("truetype");
-}
-
 
 @font-face{
   font-family: "strongmil_medium";
-  src:url("../src/components/fonts/strongmil_medium.ttf") format("truetype");
+  src:url("../src/components/fonts/strongmil_medium.ttf") format("truetype"),
+      url("../src/components/fonts/strongmil_medium.woff") format("woff");
 }
 
-@font-face{
-  font-family: "strongmil_medium_vert";
-  src:url("../src/components/fonts/strongmil_medium_vert.ttf") format("truetype");
-}

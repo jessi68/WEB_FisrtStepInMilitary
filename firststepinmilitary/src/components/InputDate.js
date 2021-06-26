@@ -23,6 +23,10 @@ const InputDateBlock = styled.div`
     font-size: 40px;
     color: #343a40;
   }
+  ub{
+    font-family:"NanumSquareRoundB";
+    font-size:17px;
+}
 `;
 
 
@@ -49,7 +53,7 @@ function InputDate ()  {
     return (
         <InputDateBlock>
         <div>
-            <b>생년월일을 입력해주세요 : </b>
+            <ub>생년월일을 입력해주세요 : </ub>
         </div>
         <DatePicker
       renderCustomHeader={({
