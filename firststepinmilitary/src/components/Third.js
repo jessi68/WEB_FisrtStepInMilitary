@@ -41,6 +41,7 @@ function Third() {
         <SecondStyleBlock>
             <k>본인의 전공을 추가해주세요<br /></k>
         </SecondStyleBlock>
+        
         <LicenseList />
         <MajorCreate />
         
