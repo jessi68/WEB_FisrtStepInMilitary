@@ -14,6 +14,10 @@ const InputNameBlock = styled.div`
     font-size: 40px;
     color: #343a40;
   }
+  ub{
+      font-family:"NanumSquareRoundB";
+      font-size:17px;
+  }
 `;
 
 function InputName() {
@@ -35,7 +39,7 @@ function InputName() {
     return (
         <InputNameBlock>
             <div>
-                <b>이름을 입력해주세요 : </b>
+                <ub>이름을 입력해주세요 : </ub>
             </div>
             <input placeholder="이름을 입력해주세요" onChange={onChange} value={text} />
             <button onClick={onReset}>초기화</button>

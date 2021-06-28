@@ -6,8 +6,8 @@ import MainHead from './MainHead';
 import LicenseList from './LicenseList';
 import LicenseCreate from './LicenseCreate';
 import { LicenseProvider } from './LicenseContext';
-import {Link} from 'react-router-dom';
 import '../App.css';
+import MajorCreate from './MajorCreate';
 
 const GlobalStyle=createGlobalStyle`
 body{
@@ -31,7 +31,7 @@ const SecondStyleBlock = styled.div`
   }
 `;
 
-function Second() {
+function Third() {
     return(
         <>
         <LicenseProvider>
@@ -39,15 +39,10 @@ function Second() {
         <MainTemplate>
         <MainHead />
         <SecondStyleBlock>
-            <k>본인이 보유한 자격증 혹은 면허를 추가해주세요<br />
-             단, 1종 보통, 1종 대형의 경우 '자동차운전면허'로 검색해주십시오. </k>
-           
-        </SecondStyleBlock>     
-        <Link to="/Third">
-              <button style={{marginLeft:"30px"}}>이동하기</button>
-            </Link>   
+            <k>본인의 전공을 추가해주세요<br /></k>
+        </SecondStyleBlock>
         <LicenseList />
-        <LicenseCreate />
+        <MajorCreate />
         
         </MainTemplate>
         </LicenseProvider>
@@ -56,4 +51,4 @@ function Second() {
     );
 }
 
-export default Second;
+export default Third;

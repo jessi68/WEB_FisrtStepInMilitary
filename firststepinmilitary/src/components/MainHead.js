@@ -11,7 +11,7 @@ const MainHeadBlock = styled.div`
   border-bottom: 1px solid #e9ecef;
 
   h1 {
-    font-family: "strongmil_medium";
+    font-family: "strongmil_bold";
     margin: 0;
     font-size: 40px;
     color: #343a40;
