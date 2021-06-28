@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import styled, { css } from 'styled-components';
 import { MdAdd } from 'react-icons/md';
 import { useLicenseDispatch,useLicenseNextId } from './LicenseContext';
-import license_data from "../datasrc/license_data.json";
+import major_data from "../datasrc/major_data.json";
 
 
 const CircleButton = styled.button`
@@ -79,7 +79,7 @@ const Input = styled.input`
   box-sizing: border-box;
 `;
 
-function LicenseCreate() {
+function MajorCreate() {
 
   const [open,setOpen] = useState(false);
   const[value,setValue] = useState('');
@@ -112,13 +112,9 @@ function LicenseCreate() {
       {open && (
         <InsertFormPositioner>
           <InsertForm onSubmit={onSubmit}>    
-          <SearchBar data={license_data}  
+          <SearchBar data={major_data}  
           onChange={onChange} value={value} />
 
-{/*}
-         <Input autoFocus placeholder="Enter 를 누르세요"  onChange={onChange}
-            value={value}/> 
-      */}
           </InsertForm>
         </InsertFormPositioner>
       )}
@@ -129,4 +125,4 @@ function LicenseCreate() {
   );
 }
 
-export default LicenseCreate;
+export default MajorCreate;

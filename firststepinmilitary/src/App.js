@@ -3,6 +3,7 @@ import {createGlobalStyle} from 'styled-components';
 import { Route} from 'react-router-dom';
 import First from './components/First';
 import Second from './components/Second';
+import Third from './components/Third';
 import './App.css';
 
 const GlobalStyle=createGlobalStyle`
@@ -26,6 +27,7 @@ return (
     <div>
       <Route path="/" exact={true} component={First} />
       <Route path="/Second" component={Second} />
+      <Route path="/Third" component={Third} />
     </div>
     <p>Copyright (c) 2021 김창현, 이서윤</p>
     </>

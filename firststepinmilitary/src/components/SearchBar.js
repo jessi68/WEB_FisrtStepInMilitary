@@ -5,7 +5,7 @@ import "./styles/SearchBar.css";
 class SearchBar extends Component {
   state = {
     results: [],
-    keyword: ""
+    keyword: "",
   };
 
   constructor(props) {
@@ -41,8 +41,13 @@ class SearchBar extends Component {
     this.setState({ visible: false, results: [], keyword: "" });
   };
 
-  render() {
 
+  handleChange = e => {
+    this.props.onChange(e);
+    this.onSearch(e.target.value);
+  };
+
+  render() {
     //renders our results using the SearchPreview component
     var results = this.state.results.map(({name}, index) => {
       return (
@@ -55,8 +60,7 @@ class SearchBar extends Component {
       );
     });
     return (       
-        <div className="auto">
-        
+        <div className="auto" >
           <button
             onClick={() => this.cancelSearch()}
             className={`cancel-btn ${this.state.keyword.length > 0 ? "active" : "inactive"}`}
@@ -65,11 +69,11 @@ class SearchBar extends Component {
           </button>
 
           <input
-          autoFocus
+            autoFocus
             className="search-bar"
             placeholder="Enter 를 누르세요"
-            value={this.state.keyword}
-            onChange={e => this.onSearch(e.target.value)}
+            value={this.props.keyword}
+            onChange={e => this.handleChange(e)}
           />
 
           {this.state.visible ? (
@@ -77,7 +81,6 @@ class SearchBar extends Component {
           ) : null}
           
         </div>
-  
     );
   }
 }
@@ -95,5 +98,4 @@ const SearchPreview = ({name, index, updateText }) => {
     </div>
   );
 };
-
 export default SearchBar;

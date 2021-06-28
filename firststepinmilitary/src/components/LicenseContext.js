@@ -1,7 +1,6 @@
 import React, { useReducer,createContext,useContext,useRef} from 'react';
 
 const initialLicenses=[
-    
 ];
 
 function LicenseReducer(state, action) {
