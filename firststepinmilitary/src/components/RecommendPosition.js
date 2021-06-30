@@ -38,7 +38,7 @@ function findAdequatePosition(major) {
   return results['보직']
 }
 
-function Third() {
+function RecommendPositionFromMajor() {
     return(
         <>
         <LicenseProvider>
@@ -46,7 +46,7 @@ function Third() {
         <MainTemplate>
         <MainHead />
         <SecondStyleBlock>
-            <k>본인의 전공을 추가해주세요<br /></k>
+            <k>본인의 전공을 입력하시면 그에 맞는 보직을 추천해드립니다.<br /></k>
         </SecondStyleBlock>
         
         <LicenseList findDataFrom={findAdequatePosition}/>
@@ -59,4 +59,4 @@ function Third() {
     );
 }
 
-export default Third;
+export default RecommendPositionFromMajor;

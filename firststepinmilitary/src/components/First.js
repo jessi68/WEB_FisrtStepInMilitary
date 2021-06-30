@@ -21,7 +21,7 @@ function First() {
             <MainHead />
             <InputName />
             <InputDate />
-            <Link to="/Second">
+            <Link to="/FindCertificateAndAdd">
               <button style={{marginLeft:"30px"}}>이동하기</button>
             </Link>
 

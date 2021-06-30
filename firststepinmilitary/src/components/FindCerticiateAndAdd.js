@@ -31,7 +31,7 @@ const SecondStyleBlock = styled.div`
   }
 `;
 
-function Second() {
+function FindCertificateAndAdd() {
     return(
         <>
         <LicenseProvider>
@@ -43,7 +43,7 @@ function Second() {
              단, 1종 보통, 1종 대형의 경우 '자동차운전면허'로 검색해주십시오. </k>
            
         </SecondStyleBlock>     
-        <Link to="/Third">
+        <Link to="/RecommendPositionFromMajor">
               <button style={{marginLeft:"30px"}}>이동하기</button>
             </Link>   
         <LicenseList findDataFrom={(data) => data}/>
@@ -56,4 +56,4 @@ function Second() {
     );
 }
 
-export default Second;
+export default FindCertificateAndAdd;
