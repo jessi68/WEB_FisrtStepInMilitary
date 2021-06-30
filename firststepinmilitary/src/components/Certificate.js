@@ -46,7 +46,7 @@ function Second() {
         <Link to="/Third">
               <button style={{marginLeft:"30px"}}>이동하기</button>
             </Link>   
-        <LicenseList />
+        <LicenseList findDataFrom={(data) => data}/>
         <LicenseCreate />
         
         </MainTemplate>

@@ -11,15 +11,12 @@ const LicenseListBlock = styled.div`
   overflow-y: auto;
 `;
 
-function findAdequatePosition(major) {
-  var results = major_to_position.find(function (item) {
-      return item['전공'].includes(major.slice(0, 2))
-  })
-  return results['보직']
-}
 
-function LicenseList() {
+
+
+function LicenseList(props) {
   const licenses = useLicenseState();
+ 
   return (
   
   <LicenseListBlock>
@@ -27,7 +24,7 @@ function LicenseList() {
         <LicenseItem
           key={license.id}
           id={license.id}
-          text={findAdequatePosition(license.text)}
+          text={props.findDataFrom(license.text)}
         />
       ))}
   </LicenseListBlock>

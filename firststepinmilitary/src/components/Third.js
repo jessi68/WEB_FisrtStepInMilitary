@@ -8,6 +8,7 @@ import LicenseCreate from './LicenseCreate';
 import { LicenseProvider } from './LicenseContext';
 import '../App.css';
 import MajorCreate from './MajorCreate';
+import major_to_position from "../datasrc/major_to_position.json";
 
 const GlobalStyle=createGlobalStyle`
 body{
@@ -30,6 +31,12 @@ const SecondStyleBlock = styled.div`
 
   }
 `;
+function findAdequatePosition(major) {
+  var results = major_to_position.find(function (item) {
+      return item['전공'].includes(major.slice(0, 2))
+  })
+  return results['보직']
+}
 
 function Third() {
     return(
@@ -42,7 +49,7 @@ function Third() {
             <k>본인의 전공을 추가해주세요<br /></k>
         </SecondStyleBlock>
         
-        <LicenseList />
+        <LicenseList findDataFrom={findAdequatePosition}/>
         <MajorCreate />
         
         </MainTemplate>
